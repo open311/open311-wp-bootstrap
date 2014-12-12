@@ -8,5 +8,8 @@
 
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo esc_url(get_feed_link()); ?>">
 
+  <!-- Custom fonts -->
+  <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,600italic,700,700italic,300,300italic' rel='stylesheet' type='text/css'>
+  
   <?php wp_head(); ?>
 </head>
