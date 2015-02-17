@@ -27,7 +27,7 @@
       
 
         <?php 
-          if(is_front_page()) {
+          if(is_front_page() OR is_page()) {
             echo get_bloginfo ( 'description' );
           } else if (is_archive() || is_single()) {
             echo '<a href="/blog">Blog</a>';

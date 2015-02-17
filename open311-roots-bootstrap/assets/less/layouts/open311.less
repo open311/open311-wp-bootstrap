@@ -70,6 +70,14 @@ header .navbar-nav > li > a:hover {
   font-weight : bold;
 }
 
+body.home #page-header h2, 
+body.page #page-header h2, 
+ {
+  font-weight : 300;
+  font-style: italic;
+}
+
+
 #page-header h2 a {
   text-decoration : none;
   color : #000;
@@ -85,6 +93,20 @@ header .navbar-nav > li > a:hover {
 
 #page-header .revision-buttons .edit-button {
   color : #337ab7;
+}
+
+
+body.page #main .main header h1.entry-title {
+  font-size: 2em;
+  margin-top: 1.22em;
+  margin-bottom : 1em;
+  border-bottom : 1px solid #ccc;
+}
+
+body.home.page #main .main header h1.entry-title {
+  margin-top: 0;
+  margin-bottom : 0;
+  border-bottom : none;
 }
 
 #main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
@@ -113,6 +135,19 @@ header .navbar-nav > li > a:hover {
 }
 
 /* posts index */
+
+.posts .post {
+  margin-bottom : 10em;
+}
+
+article.post header {
+  margin-top : 1em;
+}
+
+.post header {
+  margin-bottom : 1em;
+}
+
 .post > h3.title {
   position: relative;
   padding-top: 10px; }
@@ -231,9 +266,33 @@ header .navbar-nav > li > a:hover {
   padding : 1em 0 3em 0;
 }
 
+article footer {
+  background-color: #f5f5f5;
+  border : 1px solid #e5e5e5;
+  color : #666666;
+  display : block;
+  float : left;
+  width : 100%;
+  padding : .5em;
+  margin-bottom : 4em;
+}
+
+article footer p.author {
+  float : left;
+  margin : 0;
+}
+
+article footer time.updated {
+  float : right;  
+}
+
 @media (min-width: 1200px) {
   #toc-container {
     float: right;
     width : 25%;
   }
+}
+
+.spotlight p a {
+  color : #000;
 }
